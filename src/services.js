@@ -3,7 +3,7 @@ import { Indicator } from 'mint-ui';
 
 const isDev = process.env.NODE_ENV === 'development';
 const ajax = axios.create({
-  baseURL: isDev ? 'http://rap2api.taobao.org/app/mock/115736' : '真实的地址',
+  baseURL: isDev ? 'http://rap2api.taobao.org/app/mock/115736' : 'http://rap2api.taobao.org/app/mock/115736',
 });
 
 ajax.interceptors.request.use((config) => {
